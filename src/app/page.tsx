@@ -9,12 +9,12 @@ export default function Home() {
     'Traveling',
     'Lifting Weights',
   ]);
-  const [asc, setAsc] = useState(true);
+  const [isAscending, setIsAscending] = useState(true);
 
-  const handleReorder = () => {
+  const sortList = () => {
     const sorted = [...interests].sort();
-    setInterests(asc ? sorted.reverse() : sorted);
-    setAsc(!asc);
+    setInterests(isAscending ? sorted.reverse() : sorted);
+    setIsAscending(!isAscending);
   };
 
   return (
@@ -41,7 +41,7 @@ export default function Home() {
       </ul>
 
       <button
-        onClick={handleReorder}
+        onClick={sortList}
         className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
       >
         Sort Interests
