@@ -22,7 +22,7 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-4">Welcome to my website!</h1>
 
       <p className="mb-4">
-        Hi, I’m Ryan! I’m a CSSE student at the University of Washington Bothell.
+        My name is Ryan Doan, and I am a junior here at the University of Washington Bothell majoring in CSSE. Some of my interests include gaming, traveling, and lifting weights.
       </p>
 
       <Image
